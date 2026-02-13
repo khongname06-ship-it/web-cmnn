@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lời chúc năm mới</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+  <h1 id="wishText"></h1>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    if (name) {
+      document.getElementById("wishText").innerText =
+        "Chúc bạn " + name + " năm mới vui vẻ, phát tài phát lộc 6368 hehe 🎊";
+    }
+  </script>
+
+</body>
+</html>
